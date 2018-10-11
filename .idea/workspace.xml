@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82850b8-e10f-4b43-be25-14c6161f6970" name="Default Changelist" comment="" />
+    <list default="true" id="c82850b8-e10f-4b43-be25-14c6161f6970" name="Default Changelist" comment="Update separando a responsabilidade da função de verificar o numero para cada tipo de divisão 3 ou 5">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TesteZenvia/FizzBuzz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TesteZenvia/FizzBuzz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FizzBuzz.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,14 +44,38 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="1106403294">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="29" />
+          <entry key="PLAIN_TEXT" value="181" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="57" />
+          <entry key="java" value="29" />
+          <entry key="txt" value="124" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.file.types.open" />
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-355">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="120">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -54,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/FizzBuzzTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="259">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,20 +102,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hsakamoto" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/test/FizzBuzzTest.java" />
+        <option value="$PROJECT_DIR$/src/FizzBuzz.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -121,7 +159,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539213699626" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539216911509" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -149,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FizzBuzzTest">
+  <component name="RunManager" selected="JUnit.FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5">
     <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TesteZenvia" />
       <option name="PACKAGE_NAME" value="" />
@@ -158,31 +196,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FizzBuzzTest.deveTestarBuzzParaNumerosDivisiveisApenasPor5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TesteZenvia" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FizzBuzzTest" />
-      <option name="METHOD_NAME" value="deveTestarGeracaoParaListaCompletaDe0a100" />
+      <option name="METHOD_NAME" value="deveTestarBuzzParaNumerosDivisiveisApenasPor5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FizzBuzzTest.deveTestarFizzParaNumerosDivisiveisApenasPor3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TesteZenvia" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FizzBuzzTest" />
-      <option name="METHOD_NAME" value="deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe1a100FizzBuzzStage2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TesteZenvia" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FizzBuzzTest" />
-      <option name="METHOD_NAME" value="deveTestarGeracaoParaListaCompletaDe1a100FizzBuzzStage2" />
+      <option name="METHOD_NAME" value="deveTestarFizzParaNumerosDivisiveisApenasPor3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,20 +226,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FizzBuzzTest.deveTestarNumerosParaNaoDivisiveisPor3Ou5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TesteZenvia" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FizzBuzzTest" />
+      <option name="METHOD_NAME" value="deveTestarNumerosParaNaoDivisiveisPor3Ou5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5" />
-      <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100" />
-      <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2" />
-      <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe1a100FizzBuzzStage2" />
       <item itemvalue="JUnit.FizzBuzzTest" />
+      <item itemvalue="JUnit.FizzBuzzTest.deveTestarNumerosParaNaoDivisiveisPor3Ou5" />
+      <item itemvalue="JUnit.FizzBuzzTest.deveTestarFizzParaNumerosDivisiveisApenasPor3" />
+      <item itemvalue="JUnit.FizzBuzzTest.deveTestarBuzzParaNumerosDivisiveisApenasPor5" />
+      <item itemvalue="JUnit.FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FizzBuzzTest" />
-        <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe1a100FizzBuzzStage2" />
-        <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2" />
-        <item itemvalue="JUnit.FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100" />
         <item itemvalue="JUnit.FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5" />
+        <item itemvalue="JUnit.FizzBuzzTest.deveTestarBuzzParaNumerosDivisiveisApenasPor5" />
+        <item itemvalue="JUnit.FizzBuzzTest.deveTestarFizzParaNumerosDivisiveisApenasPor3" />
+        <item itemvalue="JUnit.FizzBuzzTest.deveTestarNumerosParaNaoDivisiveisPor3Ou5" />
+        <item itemvalue="JUnit.FizzBuzzTest" />
       </list>
     </recent_temporary>
   </component>
@@ -229,24 +267,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FizzBuzzTest_deveRetornarFizzParaNumerosDivisiveisApenasPor3 - 2018.10.10 at 19h 52m 53s.xml">
-      <configuration name="FizzBuzzTest.deveRetornarFizzParaNumerosDivisiveisApenasPor3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_deveRetornarBuzzParaNumerosDivisiveisApenasPor5 - 2018.10.10 at 19h 54m 17s.xml">
-      <configuration name="FizzBuzzTest.deveRetornarBuzzParaNumerosDivisiveisApenasPor5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_deveRetornarBuzzParaNumerosDivisiveisApenasPor5 - 2018.10.10 at 19h 54m 38s.xml">
-      <configuration name="FizzBuzzTest.deveRetornarBuzzParaNumerosDivisiveisApenasPor5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_deveRetornarBuzzParaNumerosDivisiveisApenasPor5 - 2018.10.10 at 19h 56m 58s.xml">
-      <configuration name="FizzBuzzTest.deveRetornarBuzzParaNumerosDivisiveisApenasPor5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_deveTestarNumeroParaDivisiveisPor3e5 - 2018.10.10 at 20h 00m 00s.xml">
-      <configuration name="FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FizzBuzzTest_deveTestarGeracaoParaListaCompletaDe0a100 - 2018.10.10 at 20h 06m 56s.xml">
-      <configuration name="FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FizzBuzzTest_deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2 - 2018.10.10 at 20h 11m 28s.xml">
       <configuration name="FizzBuzzTest.deveTestarGeracaoParaListaCompletaDe0a100FizzBuzzStage2" configurationId="JUnit" />
     </history-entry>
@@ -259,6 +279,24 @@
     <history-entry file="FizzBuzzTest - 2018.10.10 at 20h 15m 30s.xml">
       <configuration name="FizzBuzzTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FizzBuzzTest - 2018.10.10 at 20h 21m 51s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest - 2018.10.10 at 21h 13m 14s.xml">
+      <configuration name="FizzBuzzTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest_deveTestarNumerosParaNaoDivisiveisPor3Ou5 - 2018.10.10 at 21h 13m 26s.xml">
+      <configuration name="FizzBuzzTest.deveTestarNumerosParaNaoDivisiveisPor3Ou5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest_deveTestarFizzParaNumerosDivisiveisApenasPor3 - 2018.10.10 at 21h 13m 31s.xml">
+      <configuration name="FizzBuzzTest.deveTestarFizzParaNumerosDivisiveisApenasPor3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest_deveTestarBuzzParaNumerosDivisiveisApenasPor5 - 2018.10.10 at 21h 13m 45s.xml">
+      <configuration name="FizzBuzzTest.deveTestarBuzzParaNumerosDivisiveisApenasPor5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FizzBuzzTest_deveTestarNumeroParaDivisiveisPor3e5 - 2018.10.10 at 21h 13m 54s.xml">
+      <configuration name="FizzBuzzTest.deveTestarNumeroParaDivisiveisPor3e5" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -270,7 +308,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -283,11 +321,11 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info active="true" anchor="bottom" id="Messages" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -334,11 +372,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update separando a responsabilidade da função de verificar o numero para cada tipo de divisão 3 ou 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update separando a responsabilidade da função de verificar o numero para cada tipo de divisão 3 ou 5" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/FizzBuzzTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="259">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -347,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FizzBuzz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="120">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
         </state>
       </provider>
     </entry>
