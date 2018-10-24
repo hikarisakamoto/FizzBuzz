@@ -27,4 +27,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(50));
         Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(100));
     }
+
+    @Test // FizzBuzz
+    public void deveTestarNumeroParaDivisiveisPor3e5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(15));
+        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(30));
+        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(60));
+    }
 }
