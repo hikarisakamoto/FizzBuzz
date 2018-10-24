@@ -6,6 +6,10 @@ public class FizzBuzz {
 
         if (numero % 3 == 0) {
             fizzBuzzOuNumero = fizz;
+        }else
+
+        if (numero % 5 == 0) {
+                fizzBuzzOuNumero = "Buzz";
         }
         return fizzBuzzOuNumero;
     }
