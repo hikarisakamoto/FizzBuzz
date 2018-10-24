@@ -18,4 +18,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(33));
         Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(99));
     }
+
+    @Test // Buzz
+    public void deveTestarBuzzParaNumerosDivisiveisApenasPor5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(5));
+        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(50));
+        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(100));
+    }
 }
