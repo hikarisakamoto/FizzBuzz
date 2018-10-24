@@ -9,4 +9,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("1", fizzBuzz.numeroFizzBuzz(1));
         Assert.assertEquals("71", fizzBuzz.numeroFizzBuzz(71));
     }
+
+    @Test // Fizz
+    public void deveTestarFizzParaNumerosDivisiveisApenasPor3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(3));
+        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(33));
+        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(99));
+    }
 }
