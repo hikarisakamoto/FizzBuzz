@@ -1,15 +1,20 @@
 public class FizzBuzz {
     private final String fizz = "Fizz";
+    private final String buzz = "Buzz";
+
 
     protected String numeroFizzBuzz(int numero) {
         String fizzBuzzOuNumero = String.valueOf(numero);
 
         if (numero % 3 == 0) {
             fizzBuzzOuNumero = fizz;
-        }else
-
+        }
         if (numero % 5 == 0) {
-                fizzBuzzOuNumero = "Buzz";
+            if (fizzBuzzOuNumero.equals(fizz)) {
+                fizzBuzzOuNumero += buzz;
+            } else {
+                fizzBuzzOuNumero = buzz;
+            }
         }
         return fizzBuzzOuNumero;
     }
