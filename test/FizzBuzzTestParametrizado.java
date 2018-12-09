@@ -18,12 +18,6 @@ public class FizzBuzzTestParametrizado {
         this.resultadoEsperado = resultadoEsperado;
     }
 
-    @Before
-    public void initialize() {
-        fizzBuzz = new FizzBuzz();
-    }
-
-
     @Parameterized.Parameters
     public static Collection fizzBuzzNumeros() {
         return Arrays.asList(new Object[][]{
@@ -32,6 +26,11 @@ public class FizzBuzzTestParametrizado {
                 {5, "Buzz"},
                 {15, "FizzBuzz"}
         });
+    }
+
+    @Before
+    public void initialize() {
+        fizzBuzz = new FizzBuzz();
     }
 
     @Test

@@ -1,38 +1,23 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class FizzBuzz {
 
-    private final String fizz = "Fizz";
-    private final String buzz = "Buzz";
+    private Map<String, Integer> fizzBuzzPossibilidadesMap;
+
+    public FizzBuzz() {
+        fizzBuzzPossibilidadesMap = new LinkedHashMap<>();
+        fizzBuzzPossibilidadesMap.put("FizzBuzz", 15);
+        fizzBuzzPossibilidadesMap.put("Fizz", 3);
+        fizzBuzzPossibilidadesMap.put("Buzz", 5);
+    }
 
     protected String numeroFizzBuzz(int numero) {
-        String fizzBuzzOuNumero = String.valueOf(numero);
 
-        fizzBuzzOuNumero = validarFizz(numero, fizzBuzzOuNumero);
-        fizzBuzzOuNumero = validarBuzz(numero, fizzBuzzOuNumero);
-
-        return fizzBuzzOuNumero;
-    }
-
-    private String validarFizz(int numero, String fizzBuzzOuNumero) {
-        if (numero % 3 == 0) {
-            fizzBuzzOuNumero = fizz;
+        for (Map.Entry<String, Integer> entradaFizzBuzz : fizzBuzzPossibilidadesMap.entrySet()) {
+            if (numero % entradaFizzBuzz.getValue() == 0)
+                return entradaFizzBuzz.getKey();
         }
-        return fizzBuzzOuNumero;
-    }
-
-    private String validarBuzz(int numero, String fizzBuzzOuNumero) {
-        if (numero % 5 == 0) {
-            if (fizzBuzzOuNumero.equals(fizz)) {
-                fizzBuzzOuNumero += buzz;
-            } else {
-                fizzBuzzOuNumero = buzz;
-            }
-        }
-        return fizzBuzzOuNumero;
-    }
-
-    public void gerarListaCompletaAte100() {
-        for (int i = 1; i <= 100; i++) {
-            System.out.println(numeroFizzBuzz(i));
-        }
+        return String.valueOf(numero);
     }
 }

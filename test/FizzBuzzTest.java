@@ -36,4 +36,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(30));
         Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(60));
     }
+
+// Testar entrada não inteira
+
+
+// Testar entrada menor que 1
+
+
+// Testar entrada maior que 100
+
 }
