@@ -1,48 +1,40 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(Parameterized.class)
 public class FizzBuzzTest {
-    @Test // Numero
-    public void deveTestarNumerosParaNaoDivisiveisPor3Ou5() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
+    private final int numero;
+    private final String resultadoEsperado;
+    private FizzBuzz fizzBuzz;
 
-        Assert.assertEquals("1", fizzBuzz.numeroFizzBuzz(1));
-        Assert.assertEquals("71", fizzBuzz.numeroFizzBuzz(71));
+    public FizzBuzzTest(int numero, String resultadoEsperado) {
+        this.numero = numero;
+        this.resultadoEsperado = resultadoEsperado;
     }
 
-    @Test // Fizz
-    public void deveTestarFizzParaNumerosDivisiveisApenasPor3() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
-        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(3));
-        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(33));
-        Assert.assertEquals("Fizz", fizzBuzz.numeroFizzBuzz(99));
+    @Parameterized.Parameters
+    public static Collection fizzBuzzNumeros() {
+        return Arrays.asList(new Object[][]{
+                {1, "1"},
+                {3, "Fizz"},
+                {5, "Buzz"},
+                {15, "FizzBuzz"}
+        });
     }
 
-    @Test // Buzz
-    public void deveTestarBuzzParaNumerosDivisiveisApenasPor5() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
-        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(5));
-        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(50));
-        Assert.assertEquals("Buzz", fizzBuzz.numeroFizzBuzz(100));
+    @Before
+    public void initialize() {
+        fizzBuzz = new FizzBuzz();
     }
 
-    @Test // FizzBuzz
-    public void deveTestarNumeroParaDivisiveisPor3e5() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
-        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(15));
-        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(30));
-        Assert.assertEquals("FizzBuzz", fizzBuzz.numeroFizzBuzz(60));
+    @Test
+    public void testarNumeroFizzOuBuzzOuFizzBuzz() {
+        Assert.assertEquals(resultadoEsperado, fizzBuzz.numeroFizzBuzz(numero));
     }
-
-// Testar entrada não inteira
-
-
-// Testar entrada menor que 1
-
-
-// Testar entrada maior que 100
-
 }
